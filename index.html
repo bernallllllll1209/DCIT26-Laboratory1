@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f7fa;
+        }
+
+        header {
+            background: #2563eb;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: white;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #1e3a8a;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: #666;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+        }
+
+        section {
+            padding: 60px 8%;
+        }
+
+        .about {
+            text-align: center;
+            background: #eef2ff;
+        }
+
+        .about h2,
+        .services h2,
+        .contact h2 {
+            margin-bottom: 20px;
+            font-size: 30px;
+            color: #1e3a8a;
+        }
+
+        .services {
+            text-align: center;
+            background: white;
+        }
+
+        .service-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            background: #f5f7fa;
+            padding: 25px;
+            width: 280px;
+            border-radius: 8px;
+        }
+
+        .service h3 {
+            margin-bottom: 10px;
+            color: #2563eb;
+        }
+
+        .contact {
+            text-align: center;
+            background: #eef2ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e293b;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Website</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <h2>Welcome to My Website</h2>
+            <p>
+                A simple and modern website designed to showcase your
+                business, services, or personal brand.
+            </p>
+            <a href="#contact" class="button">Get Started</a>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Us</h2>
+            <p>
+                We are dedicated to providing simple, reliable, and
+                high-quality solutions for our customers. Our goal is to
+                make every project useful, attractive, and easy to use.
+            </p>
+        </section>
+
+        <section class="services" id="services">
+            <h2>Our Services</h2>
+
+            <div class="service-container">
+
+                <div class="service">
+                    <h3>Web Design</h3>
+                    <p>
+                        Clean and responsive websites that work well
+                        on computers, tablets, and mobile devices.
+                    </p>
+                </div>
+
+                <div class="service">
+                    <h3>Development</h3>
+                    <p>
+                        Modern websites built with simple and effective
+                        web technologies.
+                    </p>
+                </div>
+
+                <div class="service">
+                    <h3>Support</h3>
+                    <p>
+                        Friendly assistance to help maintain and improve
+                        your website.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <p>
+                Have a question or want to work with us?
+            </p>
+            <p>
+                Email: hello@example.com
+            </p>
+            <br>
+            <a href="mailto:hello@example.com" class="button">
+                Send Email
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
